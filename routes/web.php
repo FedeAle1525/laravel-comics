@@ -14,5 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    // Dati da passare alla View
+    $data = [
+        'title' => 'Laravel Comics'
+    ];
+
+    // Passaggio dati tramite Rotta
+    return view('home', $data);
 });
