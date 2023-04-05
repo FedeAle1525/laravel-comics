@@ -9,13 +9,15 @@
 <main>
   <div class="container">
     <div class="row">
+      @foreach ($comics as $comic)
       <div class="col-2">
         <div class="ps_card">
-          <img src="{{ Vite::asset( $comics['thumb']) }}" alt="">
+          <img src="{{ Vite::asset( $comic['thumb'] ) }}" alt="">
 
-          <span>{{ $comics['title']}}</span>
+          <span>{{ $comic['title'] }}</span>
         </div>
       </div>
+      @endforeach
     </div>
   </div>
 </main>
