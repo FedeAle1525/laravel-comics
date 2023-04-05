@@ -233,6 +233,48 @@ Route::get('/', function () {
             ],
 
         ],
+
+        "menus" => [
+
+            [
+                "title" => "Dc Comics",
+                "items" => [
+                    "Character",
+                    "Comics",
+                    "Movies",
+                    "Tv",
+                    "Games",
+                    "Videos",
+                    "News"
+                ],
+            ],
+            [
+                "title" => "Dc",
+                "items" => [
+                    "Term of Use",
+                    "Privacy Policy (New)",
+                    "Ad Choise",
+                    "Advertising",
+                    "Job",
+                    "Subscriptions",
+                    "Talent Workshop",
+                    "CPSC Certificates",
+                    "Ratings",
+                    "Shop Help",
+                    "Contact Us"
+                ],
+            ],
+            [
+                "title" => "Sites",
+                "items" => [
+                    "DC",
+                    "MAD Magazine",
+                    "DC Kids",
+                    "DC Universe",
+                    "DC power Visa",
+                ],
+            ]
+        ]
     ];
 
     // Passaggio dati tramite Rotta
