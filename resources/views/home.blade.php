@@ -6,8 +6,17 @@
 
 <!-- Sto creando il contenuto da mettere dentro il segnaposto 'content' ereditato da layout in App -->
 @section('content')
-<!-- Recupero il dato passato nella View dalla Rotta -->
-<h1>{{ $title }}</h1>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-2">
+        <div class="ps_card">
+          <img src="{{ Vite::asset( $comics['thumb']) }}" alt="">
 
-<div>Lista Film</div>
+          <span>{{ $comics['title']}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
 @endsection

@@ -1,0 +1,22 @@
+main {
+  background-color: rgb(28, 28, 28);
+  color: white;
+  padding: 40px 0;
+}
+
+.ps_card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+  }
+
+  span {
+    text-transform: uppercase;
+  }
+}
